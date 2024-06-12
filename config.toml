@@ -1,0 +1,54 @@
+baseURL = "https://hai.cherrynotperfect.me/"
+languageCode = 'en-us'
+title = "𝒞𝒽𝑒𝓇𝓇y 𝒩𝑜𝓉 𝒫𝑒𝓇𝒻𝑒𝒸𝓉"
+paginate = 5
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+
+[params]
+favicon = "/cherry.ico"
+featherIconsCDN = true
+subtitle = """
+Hi I'm Cherry, and I a passionate learner, Feel free to look around. I dump a lot of text here, enjoy your stay and use the content at your own risk! 
+
+<div style="text-align: right;">
+  <img src="/cherry.png" style="max-width: 100%; height: auto; border-radius: 20px;" alt="cherry.png">
+</div>
+"""
+   
+[[params.social]]
+name = "⤜ 𝒢𝒾𝓉𝒽𝓊𝒷 ⤛"
+icon = "github"
+url = "https://github.com/CherryNotPerfect"
+
+[[params.social]]
+name = "⤜ ℐ𝓃𝓈𝓉𝒶𝑔𝓇𝒶𝓂 ⤛"
+icon = "instagram"
+url = "https://www.instagram.com/vercerher"
+
+[[menu.main]]
+name = "⮑𝓌𝒽𝑜𝒶𝓂𝒾"
+url = "/whoami"
+weight = 1
+
+[[menu.main]]
+name = "⮑𝓅𝑜𝓈𝓉𝓈"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "⮑𝑔𝒶𝓁𝓁𝑒𝓇𝓎"
+url = "/gallery"
+weight = 3
+
+[[menu.main]]
+name = "⮑𝓂𝓎𝓁𝒶𝓃𝑔𝓊𝒶𝑔𝑒"
+url = "/mylanguage"
+weight = 4
+
+[assets]
+sources = ["assets"]
+
+[markup.goldmark.renderer]
+unsafe= true

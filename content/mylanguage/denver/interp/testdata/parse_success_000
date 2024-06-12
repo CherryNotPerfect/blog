@@ -1,0 +1,33 @@
+a system x {
+  a break
+}
+main system {
+  a < [a system]
+  a!system loop {
+    [
+      b c < {
+        loop continue
+      }
+      a!system a < b {
+        loop break
+      }
+      a=system a < c {
+        break
+      }
+    ]
+    [
+      =system d e < system a b c self {
+        break
+      }
+      !null self < self {
+        {
+          label [
+          ]
+          a < b
+        }
+        continue
+      }
+    ]
+  }
+  main break
+}

@@ -1,0 +1,7 @@
+<footer>
+  <div class="soc">
+      {{- range $index, $key := .Site.Params.Social -}}
+      <a href="{{ $key.url }}" rel="me" title="{{ $key.name }}">{{ $key.name }}</i></a>
+      {{- end -}}
+  </div>
+</footer>
