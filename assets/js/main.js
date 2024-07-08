@@ -744,9 +744,9 @@
     })(this, function () {
         var f = function () {
             var c = document.createElement("div");
-            c.style.cssText = "position: fixed; top: 0; right: 0; cursor: default; opacity: 0.9; z-index: 10000;  box-shadow: 0 0 5px 2px rgb(15, 255, 80), inset 0 0 2px 0px rgb(15, 255, 80);"; 
-            var k = (performance || Date).now(), g = k, a = 0, r = new f.Panel("FPS", "#0FFF50", "#00121a");
-            c.appendChild(r.dom);
+            c.style.cssText = "position: fixed; top: 0; right: 0; cursor: default; opacity: 0.9; z-index: 10000;  box-shadow: 0 0 5px 2px rgb(0, 255, 255), inset 0 0 2px 0px rgb(0, 255, 255);"; 
+            var k = (performance || Date).now(), g = k, a = 0, r = new f.Panel("FPS", "#00FFFF", "#00121a");
+            c.appendChild(r.dom);            
     
             function updateFPS() {
                 var now = (performance || Date).now();
@@ -825,4 +825,20 @@
     function showHorizontalScrollbar() {
         document.documentElement.style.overflowX = '';
     }
-    
+//module pre 
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('pre');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-animate');
+        }
+      });
+    });
+  
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+  });
+  
