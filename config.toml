@@ -1,6 +1,6 @@
 baseURL = "https://hai.cherrynotperfect.me/"
 languageCode = 'en-us'
-title = "༗  ⊁𝒞𝒽𝑒𝓇𝓇y 𝒩𝑜𝓉 𝒫𝑒𝓇𝒻𝑒𝒸𝓉"
+title = "༗ ⊁𝒞𝒽𝑒𝓇𝓇y 𝒩𝑜𝓉 𝒫𝑒𝓇𝒻𝑒𝒸𝓉"
 paginate = 5
 
 pygmentsstyle = "monokai"
