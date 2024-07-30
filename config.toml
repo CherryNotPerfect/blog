@@ -1,6 +1,6 @@
 baseURL = "https://hai.cherrynotperfect.me/"
 languageCode = 'en-us'
-title = "𝒞𝒽𝑒𝓇𝓇y 𝒩𝑜𝓉 𝒫𝑒𝓇𝒻𝑒𝒸𝓉"
+title = "༗  ⊁𝒞𝒽𝑒𝓇𝓇y 𝒩𝑜𝓉 𝒫𝑒𝓇𝒻𝑒𝒸𝓉"
 paginate = 5
 
 pygmentsstyle = "monokai"
@@ -13,7 +13,7 @@ subtitle = """
 Hi I'm Cherry, and I a passionate learner, Feel free to look around. I dump a lot of text here, enjoy your stay and use the content at your own risk! 
 
 <div style="text-align: right;">
-  <img src="/cherry.png" style="max-width: 100%; height: auto; border-radius: 20px;" alt="cherry.png">
+  <img src="/cherry.jpg" style="max-width: 100%; height: auto; border-radius: 20px;" alt="cherryy.jpg">
 </div>
 """
    
