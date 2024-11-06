@@ -1,0 +1,311 @@
+:root {
+  --maincolor: cyan;
+  --bordercl: cyan;
+  --callouctcolor: cyan;
+  --hovercolor: darkcyan;
+}
+
+html {
+  color: cyan;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  scrollbar-color: var(--maincolor) black;
+}
+
+body {
+  display: block;
+  margin: 8px;
+  color: cyan;
+  background-color: black;
+}
+
+* {
+  -webkit-tap-highlight-color: black;
+}
+
+::selection {
+  background-color: darkcyan;
+  color: cyan;
+}
+
+p {
+  font-family: monospace;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 3px dotted var(--bordercl);
+  margin: 1em 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--bordercl);
+  color: cyan;
+  margin: 0;
+  padding-left: 1em;
+}
+
+a {
+  border-bottom: 3px solid var(--maincolor);
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--hovercolor);
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 2ch;
+}
+
+ul li {
+  text-indent: -2ch;
+}
+
+ul>li::before {
+  content: '➤ ';
+  font-weight: bold;
+}
+
+ul.pagination {
+  padding-left: 0;
+}
+
+img {
+  border: none;
+  outline: none;
+  display: block; 
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+}
+
+figure img {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+      padding: 0 40px;
+  }
+}
+
+figure h4 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+figure h4::before {
+  content: '↳ ';
+}
+
+code {
+  background-color: cyan;
+  color: black;
+  text-decoration: bold;
+  padding: 0.1em 0.2em;
+}
+
+pre {
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px cyan, inset 0 0 2px 0px cyan;
+  opacity: 0.5; 
+  transform: translateY(50px); 
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+
+pre.scroll-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.highlight pre ::selection {
+  background: rgba(0, 0, 0, 0);
+  color: inherit;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+.content {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 1ch;
+  line-height: 1.5;
+  word-wrap: break-word;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  line-height: 3.5em;
+}
+
+header .main {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.3rem;
+  margin-top: 1em;
+}
+
+h1::before {
+  color: var(--maincolor);
+  content: '✳ ';
+}
+
+h2::before {
+  color: var(--maincolor);
+  content: '✳✳ ';
+}
+
+h3::before {
+  color: var(--maincolor);
+  content: '✳✳✳ ';
+}
+
+h4::before {
+  color: var(--maincolor);
+  content: '✳✳✳✳ ';
+}
+
+h5::before {
+  color: var(--maincolor);
+  content: '✳✳✳✳✳ ';
+}
+
+h6::before {
+  color: var(--maincolor);
+  content: '✳✳✳✳✳✳ ';
+}
+
+.meta {
+  color: darkcyan;
+  letter-spacing: -0.5px;
+  padding-left: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 0.4rem dotted var(--bordercl);
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+}
+
+.soc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.border {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid;
+}
+
+.footer-info {
+  padding: var(--footer-padding);
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+
+time {
+  color: darkcyan; 
+}
+
+article .title {
+  margin-bottom: 1em;
+}
+
+.site-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags li::before {
+  content: "▶ ";
+}
+
+.tags a {
+  border-bottom: 3px solid var(--maincolor);
+}
+
+.tags a:hover {
+  color: cyan;
+  background-color: var(--hovercolor);
+}
+
+svg {
+  max-height: 15px;
+}
+
+.soc:hover {
+  color: cyan;
+}
+
+.draft-label {
+  color: var(--bordercl);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 6px;
+  background-color: black;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #00121a;
+}
+
+#particles-js::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  z-index: -1;
+}
