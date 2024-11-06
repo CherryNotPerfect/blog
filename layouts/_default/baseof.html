@@ -1,0 +1,38 @@
+{{ partial "header.html" . }}
+{{ $particlesJS := resources.Get "js/main.js" }}
+{{ $particlesConfig := resources.Get "js/config.json" }}
+
+<body>
+    <div id="particles-js"></div>
+    <div class="content">
+        {{- partial "head.html" . -}}
+        {{- block "main" . }}
+        {{- end }}
+        {{- partial "footer.html" . -}}
+    </div>
+
+    <script src="{{ $particlesJS.Permalink }}"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    particlesJS.load('particles-js', '{{ $particlesConfig.Permalink }}', function () {
+        console.log('particles.js loaded - callback');
+    });
+});
+    </script>
+    
+    <script>
+(function () {
+    var statsScript = document.createElement('script');
+    statsScript.onload = function () {
+        var stats = new Stats();
+        document.body.appendChild(stats.dom);
+        requestAnimationFrame(function loop() {
+            stats.update();
+            requestAnimationFrame(loop);
+        });
+    };
+    statsScript.src = "{{ .Site.BaseURL }}js/main.js";
+    document.head.appendChild(statsScript);
+})();
+    </script>
+</body>
